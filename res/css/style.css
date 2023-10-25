@@ -1,0 +1,28 @@
+*{
+  user-select: none;
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#startButton {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #circleButton {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(255, 119, 119);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 5px red;
+    filter: blur(2px);
+  }
