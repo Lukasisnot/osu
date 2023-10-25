@@ -3,26 +3,38 @@
   font-family: 'Tilt Neon', sans-serif;
 }
 
-#startButton {
-    background-color: red;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255,0,254,1) 0%, rgba(9,9,121,1) 30%, rgba(9,9,121,1) 70%, rgba(255,0,254,1) 100%);
+}
+#startBtn:hover {
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+
+#startBtn {
+    background-color: rgba(0,185,255,1);
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 50px;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
   }
 
-  #circleButton {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: rgb(255, 119, 119);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: solid 5px red;
-    filter: blur(2px);
-  }
+#point {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: rgba(9,9,121,1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 10px rgba(0,185,255,1);
+  filter: blur(1px);
+  transition: .2s ease;
+}
